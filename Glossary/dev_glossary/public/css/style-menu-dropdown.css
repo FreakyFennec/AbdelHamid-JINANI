@@ -1,0 +1,53 @@
+/**
+ * style-menu-deroulant.css index.php Glossary
+ * ============================================
+ * By AHJ
+*/
+
+.dropdown_menu {  
+    align-items: center;
+
+    margin: 0px;
+    padding: 0px;
+ 
+    border: none;
+}
+.dropdown_menu ul {
+    text-align: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #d6d6d600; 
+}
+.dropdown_menu li {
+    background-color: #dfdddd;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.dropdown_menu li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.dropdown_menu li:hover ul {
+    display: block;
+}
+.dropdown_menu a {
+    display: block;
+    color: #525252;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown_menu a:hover {
+    color: #14d802;
+}
+.li_titre {
+    color: #3d3c3b;
+    padding: 5px;
+}
+.dropdown_a {
+    width: 90%;
+}

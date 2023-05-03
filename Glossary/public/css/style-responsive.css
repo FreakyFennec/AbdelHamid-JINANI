@@ -1,0 +1,34 @@
+/**
+ * style-responsive.css => index.php => dev_glossary
+ * ============================================
+ * By AHJ
+*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 600px) {
+    
+    #container {    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+
+    aside {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: 
+            "author zone_presentation ";
+    }
+    #img_author {
+        width: 150px;
+    }
+    #zone_presentation {
+        text-align: left;
+        margin: 10px;
+    }
+}

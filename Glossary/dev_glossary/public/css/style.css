@@ -1,0 +1,209 @@
+/*
+    style.css => glossary_form.php => dev_glossary
+    ============================================
+    By AHJ
+*/
+
+*,
+::before,
+::after {    
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/******************* Body ******************/
+/*******************************************/
+body {
+    background-color: #bebebe;
+}
+#container {    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+
+    max-width: 1024px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px auto;
+    background-color: #ffffff;   
+}
+
+/***************** Header ******************/
+/*******************************************/
+header {
+    grid-area: header;
+    width: 100%;
+    color: #fff;
+    
+    background-color: #3e9fee;
+}
+#title_header {
+    height: 50px;
+    font-size: 1.7em;
+    font-style: italic;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_header {
+    width: 100%;
+
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/******************* Nav *******************/
+/*******************************************/
+.nav_header {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #3e9fee;
+    border-bottom: 3px dashed #fff;
+}
+ul {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 5px;
+
+    background-color: #3e9fee;
+}
+li {
+    display: inline-block;
+    
+    list-style: none;
+    margin: 5px 10px;
+}
+a {
+    text-decoration: none;
+
+    line-height: 1.5em;
+}
+.nav_header a:hover {   
+    color: rgb(19, 247, 68);
+}
+.home, .movie, .blog, .contact, .admin {
+    color: #fff;
+    
+    margin: 0px;
+}
+
+/****************** Main *******************/
+/*******************************************/
+main {
+    grid-area: main;
+    background-color: #fff;
+}
+
+/**************** Article ******************/
+article {
+    margin: 0px;
+    padding: 10px;
+}
+#title_article {
+    font-size: 2em;
+    color: #000;
+    margin: 20px 0px 0px 0px;
+}
+#presentation {
+    margin: 20px 0px 20px 0px;
+}
+.contLinkPage {
+    padding: 5px;
+    text-align: center;
+    background-color: #d8d8d8;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 5px;
+}
+.link_pages {
+    color: black;
+}
+.link_pages:hover {
+    color: #13f10b;
+}
+
+/***************** Aside *******************/
+/*******************************************/
+aside {
+    grid-area: aside;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+        "author zone_presentation ";
+    color: #fff;
+    
+    margin: 5px;
+    padding: 10px;
+
+    background-color: #3e9fee;
+}
+/***************** Figure ******************/
+#author {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0px;
+    padding: 0px;
+}
+.presentation_author {
+    margin: 0px;
+    padding: 0px;
+}
+#img_author{
+    width: 60%;
+
+    margin: 0px auto;
+
+    border: 2px solid #fff;
+}
+
+figcaption {
+    font-size: 1.4em;
+    color: #fff;
+    
+    text-align: center;
+
+    margin: 0px;
+    padding: 0px;
+}
+.profession {
+    color: #fff;
+
+    text-align: center;
+
+    margin: 0px;
+    padding: 0px;
+}
+/****************** Footer *****************/
+/*******************************************/
+footer {
+    grid-area: footer;
+    height: 50px;
+    font-size: 1.4em;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #3e9fee;
+}

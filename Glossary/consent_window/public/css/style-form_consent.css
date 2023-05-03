@@ -1,0 +1,44 @@
+
+/********************** Form ***********************/
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "consentText consentText"
+        "yesButton noButton";
+         
+    width: 50%;
+
+    margin: 20px auto;
+    padding: 10px;
+    
+    font-family: 'Helvetica', sans-serif;
+
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+#title_form {
+    text-align: center;
+    font-size: 1em;
+    color:black;
+    margin-top: 20px;
+}/**/
+.consentText {
+    grid-area: consentText;
+    text-align: justify;
+    word-spacing: -0.1em;
+}
+#yesButton #noButton {
+    grid-area: yesButton noButton;
+}
+button {
+    font-size: 1.05em;
+
+    height: 30px;
+
+    margin: 10px auto;
+    padding: 5px;
+    
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
