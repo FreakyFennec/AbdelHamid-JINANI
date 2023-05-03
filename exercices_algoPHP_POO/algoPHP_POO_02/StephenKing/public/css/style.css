@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+    font-family: "Poppins";
+
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Définition de la police personnalisée */
+@font-face {
+  font-family: 'MaPolicePersonnalisee';
+  src: url('fonts/Neucha/Neucha-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+ul {
+  list-style-type: '';  /* Pour éviter les puces */
+}
+body {
+  font-family: 'Neucha', sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    
+  max-width: 80%;
+  margin: 0px auto;
+}
+header {
+  grid-area: header;
+  color: #ece9e5;
+  padding: 10px;
+  background-color: #3d3c3b;
+}
+main {
+  grid-area: main;
+  color: #3d3c3b;
+  padding: 10px;
+  background-color: #f5eee5;
+}
+section {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffffff;
+}
+footer {
+  grid-area: footer;
+  color: #ece9e5;
+  text-align: center;
+  padding: 10px;
+  background-color: #3d3c3b;
+}
