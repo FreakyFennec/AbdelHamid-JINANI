@@ -1,0 +1,53 @@
+
+/********************** Form ***********************/
+form {   
+    width: 70%;
+
+    margin: 20px auto;
+    padding: 10px;
+    
+  font-family: 'Helvetica', sans-serif;
+
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+#title_form {
+    text-align: center;
+    color:black;
+    margin-top: 20px;
+}
+fieldset {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: 
+        "labelAuthor inputAuthor"
+        "labelComment areaComment";
+
+    padding: 10px;   
+}
+#fieldsetText {
+    border-radius: 5px;
+}
+#labelEmail, #labelPassW, #labelAuthor, #labelComment {
+    grid-area: labelEmail inputPassW labelAuthor labelComment;
+    font-size: 1.05em;
+
+    margin: 10px 0px 5px 0px;
+}
+#inputEmail, #inputPassW, #inputAuthor, #areaComment {
+    grid-area: inputEmail inputPassW inputAuthor areaComment;
+    font-size: 1.05em;
+
+    margin: 10px 0px 5px 0px;
+}
+button {
+    font-size: 1.05em;
+
+    height: 30px;
+
+    margin: 10px auto;
+    padding: 5px;
+    
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
