@@ -1,0 +1,41 @@
+/*
+* style-menu-deroulant.css exercice_cinema_mvc
+* ============================================
+* By AHJ
+*/
+
+nav ul {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    background-color: #dfdddd;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+nav li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+nav li:hover ul {
+    display: block;
+}
+nav a {
+    display: block;
+    color: aliceblue;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(84, 135, 245);
+}
+.li_titre {
+    color: #3d3c3b;
+    padding: 5px;
+}

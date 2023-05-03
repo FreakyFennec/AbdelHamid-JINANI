@@ -1,0 +1,38 @@
+/*
+* style-filmoReal.css exercice_cinema_mvc
+* ============================
+* By AHJ
+*/
+.name_director {
+  width: 99%;
+  font-size: 1.3em;
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+.filmoDirector {
+  width: 100%;
+  height: 80vh;
+}
+.tabFilmo {
+  width: 100%;
+  margin: 5px auto;
+  padding: 0px 0px 0px 0px;
+}
+table td {
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  border-collapse: collapse;
+}
+table td, table th {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #cccccc;
+}
+.th_releaseDate, .th_length, .th_genre {
+  text-align: center;
+}
+.td_releaseDate, .td_length, .td_genre {
+  text-align: center;
+}

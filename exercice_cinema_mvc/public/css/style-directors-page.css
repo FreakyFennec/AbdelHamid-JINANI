@@ -1,0 +1,32 @@
+/*
+* style-directors-pages.css exercice_cinema_mvc
+* ============================
+* By AHJ
+*/
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "title_page"
+    "section";
+    
+  color: #3d3c3b;
+
+  background-color: #f5f3f3;
+  padding: 10px;
+}
+.headMain {
+  grid-area: headMain;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "counter titlePage ";
+}
+.title_page {
+  grid-area: title_page;
+}
+.counter {
+  grid-area: counter;
+}

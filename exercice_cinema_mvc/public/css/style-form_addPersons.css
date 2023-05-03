@@ -1,0 +1,68 @@
+/*
+* style-form_addPersons.css exercice_cinema_mvc
+* ============================
+* By AHJ
+*/
+
+.boxForm_addPersons {
+    width: 350px;
+  
+    margin: 10px auto;
+    padding: 10px;
+  
+    background-color: #ebe6e5;
+    border: 1px solid rgb(163, 164, 170);
+    border-radius: 5px;
+}
+#form_person {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "label_Lastname input"
+                         "label_Firstname input"
+                         "label_Birth input"
+                         "label_Place input"
+                         "gender gender"
+                         "profession profession"
+                         "submit submit";
+               
+}
+
+.label_Lastname, .label_Firstname, .label_Birth, .label_Place {
+    grid-area: label_Lastname label_Firstname label_Birth label_Place;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px 0;
+}
+input {
+    margin: 6px 0;
+    padding: 5px;
+}
+
+fieldset {
+    padding: 5px;
+    border-radius: 6px;
+}
+#gender, #profession {
+    grid-area: gender, profession;
+    
+    grid-column: 1 / 3;
+   
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    margin: 5px 0px;
+}
+.button_gender, .button_profession {
+    margin: 5px 0px 0px 10px;
+}
+#submit {
+    grid-area: submit;
+    grid-column: 1 / 3;
+  
+    height: 40px;
+    
+    margin: 0px;
+  }

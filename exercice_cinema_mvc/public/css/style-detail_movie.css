@@ -1,0 +1,125 @@
+.movie {
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "detail_movie"
+        "casting_movie"
+        "synopsis";
+    margin: 0px;
+}
+.title_movie {
+    grid-area: title_movie;
+}
+.title_page {
+    margin-bottom: 10px;
+}
+.detail_movie {
+    grid-area: detail_movie;
+    display: grid; 
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+        "poster_movie info_movie"
+        "casting_movie casting_movie";
+    text-align: left;
+    margin: 0px;
+}
+.title_casting {
+    margin-bottom: 5px;
+}
+.casting_movie {
+    grid-area: casting_movie;    
+    text-align: left;
+    margin: 5px 10px 10px 10px;
+}
+.synopsis {
+    grid-area: synopsis;
+    text-align: justify;
+    padding: 10px 0px;
+}
+.poster_movie {
+    grid-area: poster_movie;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(163, 164, 170);
+    margin: 0px;
+    padding: 5px;
+}
+.info_movie {
+    grid-area: info_movie;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "title_movie" 
+        "nom_realisateur"
+        "date_sortie_fr"
+        "duree"
+        "genre"
+        "note_film";
+    margin: 0px;
+    padding: 5px;
+}
+.nom_realisateur, .date_sortie_fr, .duree, .genre, .note_film {
+    grid-area: nom_realisateur date_sortie_fr duree genre note_film;
+    margin: 0px;
+    padding: 0px;
+}
+.img_detail {
+    width: 95%;
+}
+.star {
+    color: #f3d31f;
+}
+/**/
+@media screen and (min-width: 800px) {
+    .movie {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "detail_movie"
+            "synopsis";
+        margin: 0px;
+        grid-area: movie; /* ajouter cette ligne */
+    }
+    .title_movie {
+        grid-area: title_movie;
+    }           
+    .detail_movie {
+        grid-area: detail_movie;
+        display: grid; 
+        grid-template-columns: 30% 70%;
+        grid-template-areas:
+            "poster_movie info_movie"
+            "poster_movie casting_movie";
+        text-align: left;
+        margin: 0px; 
+    }
+    .poster_movie {
+        grid-area: poster_movie;
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgb(163, 164, 170);
+        margin: 0px;
+        padding: 5px;
+    }
+    .info_movie {
+        grid-area: info_movie;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title_movie" 
+            "nom_realisateur"
+            "date_sortie_fr"
+            "duree"
+            "genre"
+            "note_film"
+            "casting_movie";
+        margin: 0px;
+        padding: 5px;
+    }
+    .casting_movie {
+        grid-area: casting_movie;    
+        text-align: left;
+        margin: 0px;
+        padding: 5px;
+    }
+}

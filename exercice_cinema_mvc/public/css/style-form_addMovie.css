@@ -1,0 +1,61 @@
+/*
+* style-form_addMovie.css exercice_cinema_mvc
+* ============================
+* By AHJ
+*/
+
+.boxForm_addMovie {
+    width: 350px;
+  
+    margin: 10px auto;
+    padding: 10px;
+  
+    background-color: #ebe6e5;
+    border: 1px solid rgb(163, 164, 170);
+    border-radius: 5px;
+}
+#form_addMovie {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "label_title input"
+                         "label_releaseFr input"
+                         "label_duration input"
+                         "label_synopsis input"
+                         "label_poster input"
+                         "label_note input"
+                         "label_director select_director"
+                         "label_genre select_genre"
+                         "submit submit";
+               
+}
+.label_title, .label_releaseFr, .label_duration, .label_synopsis, .label_poster, .label_note, .label_director, .label_genre {
+    grid-area: label_title, label_releaseFr, label_duration, label_synopsis, label_poster, label_note, label_director, label_genre ;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 6px 0;
+}
+input {
+    margin: 3px 0;
+    padding: 5px;/*
+    background-color: #d4d3d3;*/
+    border-radius: 6px;
+}
+.select_director, .select_genre {
+    grid-area: select_director, select_genre;
+
+    margin: 5px 0;
+    margin: 5px 0;
+    padding: 5px;/**/
+    background-color: #d4d3d3;
+    border-radius: 6px;
+}
+#submit {
+    grid-area: submit;
+    grid-column: 1 / 3;
+  
+    height: 40px;
+    
+    margin: 0px 0;
+  }
