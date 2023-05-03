@@ -1,3 +1,7 @@
-# AbdelHamid-JINANI
-web dev &amp; mobile dev training sandbox 
-it's juste for my own formation courses.
+Bonjour à tous,
+
+Ici c'est le sandbox de ma formation de développeur web et web mobile chez Elan.
+
+Merci de votre visite. 
+
+AHJ
