@@ -1,0 +1,48 @@
+
+*,
+::before,
+::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {/**/
+    margin: 0px auto;
+    background-color: #f7f1b2;
+}
+
+p {
+    text-align: justify;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1024px;
+
+    font-family: 'Neucha', cursive;
+
+    text-align: center;
+
+    margin: 0px auto;
+    background-color: #eee9b8;   
+}
+
+table {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px 20px;
+    border: 1px solid black;
+}
+  
+/************** Main *********************/
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.title-page {
+    font-family: 'Neucha', cursive;
+}
