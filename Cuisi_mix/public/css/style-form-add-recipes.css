@@ -1,0 +1,106 @@
+
+form {
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 4px;
+}
+fieldset {
+   padding: 10px;
+   border: none;
+}
+/* style pour le champ "Title" */
+#label-title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+#input-title {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+  
+  /* style pour le champ "Votre recette" */
+  .label-recipe {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+.recipe {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+  
+/* style pour le champ "Votre email" */
+.label-author {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+.input-author {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+  
+/* style pour le champ "Disponible" */
+.label-is_enabled {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+  
+.input-is_enabled {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+  
+/* style pour le champ "Disponibilité" */
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+input[type="radio"] {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+  
+/* style pour le bouton "Se connecter" */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+}
+  
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+  

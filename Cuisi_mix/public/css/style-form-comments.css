@@ -1,0 +1,53 @@
+form {        
+    width: 80%;
+
+    margin: 20px auto;
+    padding: 10px;
+    
+    font-family: 'Helvetica', sans-serif;
+
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-areas: 
+      "labelAuthor author"
+      "labelComment comment";
+
+  gap: 5px;
+
+  padding: 10px;   
+}
+
+#fieldsetText {
+  border-radius: 5px;
+}
+
+#labelAuthor, #labelComment {
+  grid-area: labelAuthor labelComment;
+}
+
+#author, #comment {
+  grid-area: author comment;
+	height: 25px;
+}
+
+#submit {
+  grid-area: auto;
+  color: #fff;
+  font-size: 16px;
+  justify-self: last baseline;
+  margin-top: 10px;
+  padding: 5px 15px;
+  background-color: #0f3046;
+	border-radius: 6px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #1e5372;
+}
+
