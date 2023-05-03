@@ -1,0 +1,76 @@
+/**
+ * style_form.css => style_form.php => cinema_sql_bdd
+ * ============================================
+ * By AHJ
+*/
+
+/********************** Form ***********************/
+form {   
+    width: 98%;
+
+    margin: 20px auto;
+    padding: 10px;
+
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;   
+}
+#fieldsetTextPers div label, #fieldsetTextMov div label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin-right: 10px;
+    border-radius: 0px;
+}
+#fieldsetTextPers div input,
+#fieldsetTextMov div input, 
+#fieldsetTextPers div select, 
+#fieldsetTextMov div input {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+.titrefieldset {
+    grid-area: titrefieldset;
+}
+#fieldsetTextMov {
+    border-radius: 0px;
+}
+#inputTextLabel {
+    font-size: 1.05em;
+    width: 200px;
+}
+#inputText {
+    width: 200px;
+
+    margin: 10px 0px 5px 0px;
+}
+textarea {
+    vertical-align: top;
+}
+  
+#fieldsetButtonR {
+    font-size: 1.05em;
+    border-radius: 0px 0px 5px 5px;
+}
+.choiceType {
+    margin: 10px 0px 5px 0px;
+}
+button {
+    font-size: 1.05em;
+
+    width: 80px;
+    height: 30px;
+
+    margin: 10px auto;
+    
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}

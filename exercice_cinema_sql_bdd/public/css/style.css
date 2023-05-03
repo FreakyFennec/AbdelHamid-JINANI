@@ -1,0 +1,106 @@
+/**
+* style.css => Style pour la page algoPHP_00.
+************************************************
+* By AHJ 11/2022-06/2023
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins";
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Définition de la police personnalisée */
+@font-face {
+  font-family: 'MaPolicePersonnalisee';
+  src: url('fonts/Neucha/Neucha-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Neucha', sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    
+  max-width: 1024px;
+  margin: 0px auto;
+}
+header {
+  grid-area: header;
+  color: #ece9e5;
+  padding: 10px;
+  background-color: #3d3c3b;
+}
+.title_site {
+  font-family: Neucha, cursive;
+}
+main {
+  grid-area: main;
+  color: #3d3c3b;
+  padding: 10px;
+  background-color: #f5eee5;
+}
+section {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Poster */
+thead th:nth-child(1) {
+  width: 15%;
+}
+/* Title */
+thead th:nth-child(2) {
+  width: 45%;
+}
+/* Date */
+thead th:nth-child(3) {
+  width: 30%;
+}
+/* Duree */
+thead th:nth-child(4) {
+  width: 20%;
+}
+th, td {
+  text-align: left;
+  border-bottom: 1px solid #a3a4aa;
+  border-top: 1px solid #a3a4aa;
+}
+
+fieldset {
+  padding: 10px;
+}
+.poster_movie {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+footer {
+  grid-area: footer;
+  font-family: Neucha, cursive;
+  color: #ece9e5;
+  text-align: center;
+  padding: 10px;
+  background-color: #3d3c3b;
+}
