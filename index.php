@@ -39,6 +39,7 @@
                 <h3 class="titleSec">TP structure MVC</h3>
                 <p class="linkCourse"><a href="http://localhost/AbdelHamid-JINANI/exercice_cinema_mvc/">Cinéma MVC</a></p>
                 <p class="linkCourse"><a href="http://localhost/AbdelHamid-JINANI/POO_livre/">POO_livre</a></p>
+                <p class="linkCourse"><a href="http://localhost/AbdelHamid-JINANI/forumPlateau/">POO_forumPlateau</a></p>
                 <p class="linkCourse"><a href="http://localhost/AbdelHamid-JINANI/POO_Grafikart/">POO_Grafikart</a></p>
             </section>
             <section>
