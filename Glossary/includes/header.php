@@ -4,7 +4,7 @@
 </header><!---->
 <nav class="nav_header">
     <ul class="ul_navigation">
-        <li><a href="#" class="home">Home</a></li>
+        <li><a href="../index.php" class="home">Home</a></li>
         <li><a href="#" class="blog">Blog</a></li>
         <li><a href="#" class="contact">Contact</a></li>
         <li><a href="form_glossary/glossary_form_login.php" class="admin">Admin</a></li>
